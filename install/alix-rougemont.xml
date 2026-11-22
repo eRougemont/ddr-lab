@@ -12,6 +12,7 @@
 ../../ddr_articles/*.xml
 ../../ddr_inedits/*.xml
   </entry>
+  <!--
     <entry key="exclude">
 ../../ddr_livres/ddr19290300mip_mefaits-instruction-publique.xml
 ../../ddr_livres/ddr19341025polpers_politique-personne.xml
@@ -23,8 +24,17 @@
 ../../ddr_livres/ddr19820900paysan_paysan-du-danube.xml
 ../../ddr_livres/ddr19680314jde_journal-epoque.xml
 ../../ddr_livres/ddr19560200ao_amour-occident.xml
+../../ddr_livres/ddr19611200vhse_vingt-huit-siecles-europe.xml
+    </entry>
+  -->
+      <entry key="normalizations">
+        ddr-norm.csv
     </entry>
   <entry key="dicfile">ddr-dic.csv</entry>
-  <!-- Chemin du dossier où écrire les index lucene -->
-  <entry key="dstdir">../lucene</entry>
+    <!-- where are lucene index () -->
+    <entry key="luceneroot">../../alix/web/lucene/</entry>
+    <!-- the default search field for contents, is also the store field of original html file -->
+    <entry key="content">content</entry>
+    <!-- the stored field to use as an header for a document in search results -->
+    <entry key="docline">docline</entry>
 </properties>
